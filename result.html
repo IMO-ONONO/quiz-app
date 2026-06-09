@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結果</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#1976d2">
+</head>
+<body>
+  <main class="screen result-screen">
+    <header class="quiz-header">
+      <h1>結果</h1>
+      <a href="index.html" class="back-link">トップへ</a>
+    </header>
+    <p class="score" id="score"></p>
+    <section class="wrong-list">
+      <h2>間違えた問題</h2>
+      <ul id="wrong-list-items"></ul>
+    </section>
+    <footer class="result-footer">
+      <button id="retry-button" type="button">同じ項目をもう一度</button>
+      <button id="home-button" type="button">トップに戻る</button>
+    </footer>
+  </main>
+  <script src="js/result.js"></script>
+  <script src="js/sw-register.js"></script>
+</body>
+</html>

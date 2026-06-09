@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公務員試験対策</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1976d2">
+</head>
+<body>
+  <main class="screen">
+    <h1>公務員試験対策</h1>
+    <p class="subtitle">項目を選んで10問解こう</p>
+
+    <div class="menu">
+      <button class="menu-button" data-subject="reasoning" type="button">
+        <span class="menu-label">数的・判断推理</span>
+        <span class="unresolved-count" id="count-reasoning"></span>
+      </button>
+      <button class="menu-button" disabled type="button">
+        <span class="menu-label">暗記（準備中）</span>
+      </button>
+      <button class="menu-button" disabled type="button">
+        <span class="menu-label">日本語（準備中）</span>
+      </button>
+      <button class="menu-button" disabled type="button">
+        <span class="menu-label">英語（準備中）</span>
+      </button>
+      <button class="menu-button review-button" id="review-button" type="button">
+        <span class="menu-label">間違えた問題を見直す</span>
+        <span class="unresolved-count" id="count-review"></span>
+      </button>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/sw-register.js"></script>
+</body>
+</html>

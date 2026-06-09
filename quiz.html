@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>出題</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#1976d2">
+</head>
+<body>
+  <main class="screen quiz-screen">
+    <header class="quiz-header">
+      <span id="progress">1/10</span>
+      <a href="index.html" class="back-link">トップへ</a>
+    </header>
+
+    <section class="quiz-body">
+      <p class="question" id="question"></p>
+      <div class="choices" id="choices"></div>
+    </section>
+
+    <section class="explanation" id="explanation" hidden>
+      <p class="result-label" id="result-label"></p>
+      <p class="correct-answer" id="correct-answer"></p>
+      <p class="explanation-text" id="explanation-text"></p>
+    </section>
+
+    <footer class="quiz-footer">
+      <button id="prev-button" type="button">前へ</button>
+      <button id="next-button" type="button" disabled>決定</button>
+    </footer>
+  </main>
+  <script src="js/quiz.js"></script>
+  <script src="js/sw-register.js"></script>
+</body>
+</html>
