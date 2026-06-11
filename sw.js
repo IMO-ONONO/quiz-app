@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-app-v7';
+const CACHE_NAME = 'quiz-app-v8';
 const ASSETS = [
   './',
   './index.html',
@@ -14,6 +14,7 @@ const ASSETS = [
   './data/reasoning.json',
   './data/memory.json',
   './data/japanese.json',
+  './data/english.json',
   './manifest.json',
 ];
 

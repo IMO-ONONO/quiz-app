@@ -1,0 +1,237 @@
+{
+  "subject": "english",
+  "questions": [
+    {
+      "id": "english_voc_001",
+      "category": "vocabulary",
+      "question": "次の英単語 \"ubiquitous\" の意味として最も近いのはどれか。",
+      "choices": [
+        "rare（稀な）",
+        "ancient（古代の）",
+        "found everywhere（どこにでもある）",
+        "unique（独特な）",
+        "expensive（高価な）"
+      ],
+      "answer": 2,
+      "explanation": "ubiquitous は「至る所に存在する、遍在する」の意。"
+    },
+    {
+      "id": "english_voc_002",
+      "category": "vocabulary",
+      "question": "次の英単語 \"ambiguous\" の意味として最も近いのはどれか。",
+      "choices": [
+        "clear（明瞭な）",
+        "unclear or having multiple meanings（曖昧な、複数の意味を持つ）",
+        "strong（強い）",
+        "boring（退屈な）",
+        "polite（礼儀正しい）"
+      ],
+      "answer": 1,
+      "explanation": "ambiguous は「曖昧な、二通り以上に解釈できる」の意。"
+    },
+    {
+      "id": "english_voc_003",
+      "category": "vocabulary",
+      "question": "次の英単語 \"meticulous\" の意味として最も近いのはどれか。",
+      "choices": [
+        "careless（不注意な）",
+        "lazy（怠惰な）",
+        "very careful and precise（非常に注意深く正確な）",
+        "loud（騒がしい）",
+        "humble（謙虚な）"
+      ],
+      "answer": 2,
+      "explanation": "meticulous は「細部まで注意深い、几帳面な」の意。"
+    },
+    {
+      "id": "english_voc_004",
+      "category": "vocabulary",
+      "question": "次の英単語 \"scrutinize\" の意味として最も近いのはどれか。",
+      "choices": [
+        "ignore（無視する）",
+        "examine closely（綿密に調べる）",
+        "approve（承認する）",
+        "destroy（破壊する）",
+        "purchase（購入する）"
+      ],
+      "answer": 1,
+      "explanation": "scrutinize は「細かく入念に調べる、精査する」の意。"
+    },
+    {
+      "id": "english_grm_001",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語はどれか。\nIf I ___ rich, I would buy a house by the sea.",
+      "choices": ["am", "was", "were", "be", "will be"],
+      "answer": 2,
+      "explanation": "仮定法過去では be動詞は主語の人称・数にかかわらず were を用いるのが原則。"
+    },
+    {
+      "id": "english_grm_002",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語はどれか。\nShe is the person ___ helped me yesterday.",
+      "choices": ["which", "whose", "whom", "who", "what"],
+      "answer": 3,
+      "explanation": "先行詞が人で関係代名詞節の主語になる場合は who を用いる。"
+    },
+    {
+      "id": "english_grm_003",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語句はどれか。\nI ___ in this city since 2010.",
+      "choices": ["live", "lived", "have lived", "am living", "will live"],
+      "answer": 2,
+      "explanation": "since 2010 のように過去から現在まで続く動作・状態は現在完了形 have lived で表す。"
+    },
+    {
+      "id": "english_grm_004",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語句はどれか。\nThe letter ___ by Tom yesterday.",
+      "choices": [
+        "wrote",
+        "writes",
+        "was written",
+        "is writing",
+        "has written"
+      ],
+      "answer": 2,
+      "explanation": "「手紙が書かれた」という受動の意味で、過去形の受動態 was written が適切。"
+    },
+    {
+      "id": "english_idm_001",
+      "category": "idiom",
+      "question": "イディオム \"break the ice\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "to fail（失敗する）",
+        "to start a conversation in an awkward situation（気まずい場面で会話のきっかけを作る）",
+        "to cancel a plan（予定をキャンセルする）",
+        "to be very cold（とても寒い）",
+        "to argue（口論する）"
+      ],
+      "answer": 1,
+      "explanation": "break the ice は気まずさを和らげ、会話や交流のきっかけを作ることを表す。"
+    },
+    {
+      "id": "english_idm_002",
+      "category": "idiom",
+      "question": "イディオム \"a piece of cake\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "something delicious（おいしいもの）",
+        "something very easy（とても簡単なこと）",
+        "a part of a celebration（祝い事の一部）",
+        "a small amount of money（少額のお金）",
+        "a difficult task（難しい作業）"
+      ],
+      "answer": 1,
+      "explanation": "a piece of cake は「朝飯前、たやすいこと」を意味する。"
+    },
+    {
+      "id": "english_idm_003",
+      "category": "idiom",
+      "question": "イディオム \"spill the beans\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "to cook beans（豆を料理する）",
+        "to waste food（食べ物を無駄にする）",
+        "to reveal a secret（秘密を漏らす）",
+        "to make a mistake（失敗する）",
+        "to share a meal（食事を分け合う）"
+      ],
+      "answer": 2,
+      "explanation": "spill the beans は「秘密をうっかり漏らす」の意。"
+    },
+    {
+      "id": "english_idm_004",
+      "category": "idiom",
+      "question": "イディオム \"hit the books\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "to throw books（本を投げる）",
+        "to read for fun（楽しみのために読書する）",
+        "to study hard（一生懸命勉強する）",
+        "to buy books（本を購入する）",
+        "to publish books（本を出版する）"
+      ],
+      "answer": 2,
+      "explanation": "hit the books は「集中して勉強する、猛勉強する」の意。"
+    },
+    {
+      "id": "english_syn_001",
+      "category": "synonym",
+      "question": "次のうち、\"happy\" の同意語として最も適切なのはどれか。",
+      "choices": ["sad", "joyful", "angry", "tired", "afraid"],
+      "answer": 1,
+      "explanation": "joyful は「喜びに満ちた」の意で happy と近い意味。"
+    },
+    {
+      "id": "english_syn_002",
+      "category": "synonym",
+      "question": "次のうち、\"big\" の同意語として最も適切なのはどれか。",
+      "choices": ["tiny", "huge", "thin", "narrow", "shallow"],
+      "answer": 1,
+      "explanation": "huge は「非常に大きい」の意で big の同意語にあたる。"
+    },
+    {
+      "id": "english_syn_003",
+      "category": "synonym",
+      "question": "次のうち、\"smart\" の同意語として最も適切なのはどれか。",
+      "choices": ["foolish", "lazy", "intelligent", "loud", "kind"],
+      "answer": 2,
+      "explanation": "intelligent は「賢い、知的な」の意で smart の同意語。"
+    },
+    {
+      "id": "english_syn_004",
+      "category": "synonym",
+      "question": "次のうち、\"angry\" の同意語として最も適切なのはどれか。",
+      "choices": ["calm", "furious", "happy", "polite", "shy"],
+      "answer": 1,
+      "explanation": "furious は「激怒した」の意で angry の同意語。"
+    },
+    {
+      "id": "english_phr_001",
+      "category": "phrase",
+      "question": "次の文の空所に入る最も適切な語形はどれか。\nI look forward to ___ you again.",
+      "choices": ["see", "seeing", "saw", "seen", "be seeing"],
+      "answer": 1,
+      "explanation": "look forward to の to は前置詞なので、後ろには動名詞（seeing）が来る。"
+    },
+    {
+      "id": "english_phr_002",
+      "category": "phrase",
+      "question": "次の文の空所に入る最も適切な語形はどれか。\nShe is used to ___ early in the morning.",
+      "choices": [
+        "get up",
+        "getting up",
+        "got up",
+        "gotten up",
+        "be getting up"
+      ],
+      "answer": 1,
+      "explanation": "be used to の to は前置詞で、後ろには動名詞 getting up が来る。"
+    },
+    {
+      "id": "english_phr_003",
+      "category": "phrase",
+      "question": "句 \"regardless of\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "because of（〜のために）",
+        "instead of（〜の代わりに）",
+        "in spite of（〜にかかわらず）",
+        "in addition to（〜に加えて）",
+        "thanks to（〜のおかげで）"
+      ],
+      "answer": 2,
+      "explanation": "regardless of は「〜にかかわらず、〜を問わず」の意で in spite of に近い。"
+    },
+    {
+      "id": "english_phr_004",
+      "category": "phrase",
+      "question": "句 \"in spite of\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "thanks to（〜のおかげで）",
+        "despite（〜にもかかわらず）",
+        "because of（〜のために）",
+        "as well as（〜と同様に）",
+        "according to（〜によれば）"
+      ],
+      "answer": 1,
+      "explanation": "in spite of は despite と同意で「〜にもかかわらず」の意。"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ const SUBJECTS = [
   { id: 'reasoning', label: '数的・判断推理', file: 'data/reasoning.json', categoryGroup: true },
   { id: 'memory', label: '暗記', file: 'data/memory.json', categoryGroup: true },
   { id: 'japanese', label: '日本語', file: 'data/japanese.json', categoryGroup: true },
+  { id: 'english', label: '英語', file: 'data/english.json', categoryGroup: true },
 ];
 
 const CATEGORY_LABELS = {
@@ -15,10 +16,12 @@ const CATEGORY_LABELS = {
   chemistry: '化学',
   earth_science: '地学',
   kanji: '漢字',
-  idiom: '四字熟語',
+  idiom: '四字熟語/イディオム',
   grammar: '文法・敬語',
   vocabulary: '語彙',
   literature: '文学常識',
+  synonym: '同意語',
+  phrase: '句・前置詞',
 };
 
 function escapeHtml(str) {

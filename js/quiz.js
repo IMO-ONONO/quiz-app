@@ -64,7 +64,7 @@ async function initState() {
   const otherQuestions = allQuestions.filter((q) => !unresolvedIds.includes(q.id));
 
   let additional;
-  const distributedSubjects = ['memory', 'japanese'];
+  const distributedSubjects = ['memory', 'japanese', 'english'];
   if (distributedSubjects.includes(subject) && remaining > 0) {
     additional = pickDistributedByCategory(otherQuestions, remaining);
   } else {
