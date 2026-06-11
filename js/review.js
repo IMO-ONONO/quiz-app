@@ -1,5 +1,6 @@
 const SUBJECTS = [
   { id: 'reasoning', label: '数的・判断推理', file: 'data/reasoning.json', categoryGroup: true },
+  { id: 'memory', label: '暗記', file: 'data/memory.json', categoryGroup: true },
 ];
 
 const CATEGORY_LABELS = {

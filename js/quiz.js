@@ -14,6 +14,30 @@ function shuffle(array) {
   return arr;
 }
 
+function pickDistributedByCategory(questions, count) {
+  const byCategory = {};
+  questions.forEach((q) => {
+    const cat = q.category || 'unknown';
+    if (!byCategory[cat]) byCategory[cat] = [];
+    byCategory[cat].push(q);
+  });
+  Object.keys(byCategory).forEach((cat) => {
+    byCategory[cat] = shuffle(byCategory[cat]);
+  });
+  const categories = shuffle(Object.keys(byCategory));
+  const picked = [];
+  let idx = 0;
+  while (picked.length < count) {
+    const cat = categories[idx % categories.length];
+    if (byCategory[cat].length > 0) {
+      picked.push(byCategory[cat].shift());
+    }
+    idx++;
+    if (idx > count * categories.length) break;
+  }
+  return picked;
+}
+
 function saveState() {
   sessionStorage.setItem('quizState', JSON.stringify(state));
 }
@@ -38,7 +62,13 @@ async function initState() {
 
   const remaining = 10 - unresolvedQuestions.length;
   const otherQuestions = allQuestions.filter((q) => !unresolvedIds.includes(q.id));
-  const additional = shuffle(otherQuestions).slice(0, Math.max(0, remaining));
+
+  let additional;
+  if (subject === 'memory' && remaining > 0) {
+    additional = pickDistributedByCategory(otherQuestions, remaining);
+  } else {
+    additional = shuffle(otherQuestions).slice(0, Math.max(0, remaining));
+  }
 
   const combined = shuffle([...unresolvedQuestions, ...additional]);
 
