@@ -232,6 +232,128 @@
       ],
       "answer": 1,
       "explanation": "in spite of は despite と同意で「〜にもかかわらず」の意。"
+    },
+    {
+      "id": "english_voc_005",
+      "category": "vocabulary",
+      "question": "次の英単語 \"concise\" の意味として最も近いのはどれか。",
+      "choices": [
+        "long and detailed（長く詳細な）",
+        "brief and clear（簡潔で明瞭な）",
+        "boring（退屈な）",
+        "confusing（混乱を招く）",
+        "expensive（高価な）"
+      ],
+      "answer": 1,
+      "explanation": "concise は「簡潔な、要点をまとめた」の意。"
+    },
+    {
+      "id": "english_voc_006",
+      "category": "vocabulary",
+      "question": "次の英単語 \"abundant\" の意味として最も近いのはどれか。",
+      "choices": [
+        "scarce（不足している）",
+        "plentiful（豊富な）",
+        "absent（不在の）",
+        "fragile（壊れやすい）",
+        "isolated（孤立した）"
+      ],
+      "answer": 1,
+      "explanation": "abundant は「豊富な、たっぷりある」の意。"
+    },
+    {
+      "id": "english_grm_005",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語形はどれか。\nThis book is ___ than that one.",
+      "choices": [
+        "interesting",
+        "more interesting",
+        "most interesting",
+        "the most interesting",
+        "more interestingly"
+      ],
+      "answer": 1,
+      "explanation": "than があり比較の対象があるので比較級 more interesting が適切。"
+    },
+    {
+      "id": "english_grm_006",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語形はどれか。\nMount Everest is ___ mountain in the world.",
+      "choices": ["high", "higher", "highest", "the highest", "more high"],
+      "answer": 3,
+      "explanation": "「世界で最も高い〜」と範囲が示されているので最上級 the highest が適切。"
+    },
+    {
+      "id": "english_idm_005",
+      "category": "idiom",
+      "question": "イディオム \"let the cat out of the bag\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "to release a pet（ペットを逃がす）",
+        "to accidentally reveal a secret（秘密をうっかり漏らす）",
+        "to give up on a plan（計画を諦める）",
+        "to make a big mistake（大きな失敗をする）",
+        "to start a new project（新規プロジェクトを始める）"
+      ],
+      "answer": 1,
+      "explanation": "let the cat out of the bag は「秘密をうっかり漏らす」の意。"
+    },
+    {
+      "id": "english_idm_006",
+      "category": "idiom",
+      "question": "イディオム \"once in a blue moon\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "every day（毎日）",
+        "rarely（めったに〜ない）",
+        "during a full moon（満月の間）",
+        "early in the morning（朝早く）",
+        "in a sad mood（悲しい気分のとき）"
+      ],
+      "answer": 1,
+      "explanation": "once in a blue moon は「めったに〜ない、ごくまれに」の意。"
+    },
+    {
+      "id": "english_syn_005",
+      "category": "synonym",
+      "question": "次のうち、\"sad\" の同意語として最も適切なのはどれか。",
+      "choices": ["cheerful", "sorrowful", "energetic", "shy", "calm"],
+      "answer": 1,
+      "explanation": "sorrowful は「悲しんでいる、悲嘆にくれた」の意で sad と近い。"
+    },
+    {
+      "id": "english_syn_006",
+      "category": "synonym",
+      "question": "次のうち、\"fast\" の同意語として最も適切なのはどれか。",
+      "choices": ["slow", "quick", "tired", "heavy", "weak"],
+      "answer": 1,
+      "explanation": "quick は「速い、素早い」の意で fast の同意語。"
+    },
+    {
+      "id": "english_phr_005",
+      "category": "phrase",
+      "question": "句 \"due to\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "in addition to（〜に加えて）",
+        "because of（〜のために）",
+        "instead of（〜の代わりに）",
+        "in spite of（〜にもかかわらず）",
+        "as well as（〜と同様に）"
+      ],
+      "answer": 1,
+      "explanation": "due to は「〜が原因で、〜のために」の意で because of に近い。"
+    },
+    {
+      "id": "english_phr_006",
+      "category": "phrase",
+      "question": "句 \"as a result of\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "before（〜の前に）",
+        "instead of（〜の代わりに）",
+        "as a consequence of（〜の結果として）",
+        "regardless of（〜にかかわらず）",
+        "in case of（〜の場合に）"
+      ],
+      "answer": 2,
+      "explanation": "as a result of は「〜の結果として」の意で as a consequence of と同義。"
     }
   ]
 }
