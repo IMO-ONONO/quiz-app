@@ -64,7 +64,8 @@ async function initState() {
   const otherQuestions = allQuestions.filter((q) => !unresolvedIds.includes(q.id));
 
   let additional;
-  if (subject === 'memory' && remaining > 0) {
+  const distributedSubjects = ['memory', 'japanese'];
+  if (distributedSubjects.includes(subject) && remaining > 0) {
     additional = pickDistributedByCategory(otherQuestions, remaining);
   } else {
     additional = shuffle(otherQuestions).slice(0, Math.max(0, remaining));

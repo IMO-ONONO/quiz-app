@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-app-v6';
+const CACHE_NAME = 'quiz-app-v7';
 const ASSETS = [
   './',
   './index.html',
@@ -13,6 +13,7 @@ const ASSETS = [
   './js/sw-register.js',
   './data/reasoning.json',
   './data/memory.json',
+  './data/japanese.json',
   './manifest.json',
 ];
 
