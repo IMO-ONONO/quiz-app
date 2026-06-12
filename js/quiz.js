@@ -45,7 +45,15 @@ function saveState() {
 async function initState() {
   const response = await fetch(`data/${subject}.json`);
   const data = await response.json();
-  const allQuestions = data.questions || [];
+  let allQuestions = data.questions || [];
+
+  if (sessionStorage.getItem('testMode') === 'image') {
+    allQuestions = allQuestions.filter(
+      (q) =>
+        q.questionImage ||
+        (Array.isArray(q.choiceImages) && q.choiceImages.some((p) => p))
+    );
+  }
 
   const unresolved = JSON.parse(localStorage.getItem('unresolved') || '{}');
   const unresolvedIds = Object.keys(unresolved).filter((id) =>

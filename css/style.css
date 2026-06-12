@@ -88,6 +88,13 @@ h3 {
   margin-top: 1.5rem;
 }
 
+.menu-button.test-button {
+  background: #e8eaf6;
+  border-color: #5c6bc0;
+  font-size: 0.95rem;
+  color: #283593;
+}
+
 .menu-label {
   flex: 1;
 }

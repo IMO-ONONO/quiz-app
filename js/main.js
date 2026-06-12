@@ -21,3 +21,10 @@ document.getElementById('review-button').addEventListener('click', () => {
   }
   window.location.href = 'review.html';
 });
+
+document.getElementById('test-image-button').addEventListener('click', () => {
+  sessionStorage.setItem('selectedSubject', 'reasoning');
+  sessionStorage.setItem('testMode', 'image');
+  sessionStorage.removeItem('quizState');
+  window.location.href = 'quiz.html';
+});
