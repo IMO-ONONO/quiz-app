@@ -232,6 +232,55 @@
       ],
       "answer": 3,
       "explanation": "AはBの直前なのでABは連続。BがDより前なのでDは(AB)より後。CはDより前。可能な並びは「ABCD」または「CABD」の2通り。いずれもDは4番目で確実にいえる。"
+    },
+    {
+      "id": "reasoning_jdg_010",
+      "category": "judgment",
+      "question": "半径 r の円 O の周上に点 P があり、内部の固定点を A とする。点 P が円周上を時計回りに一周するとき、線分 AP の中点 M が描く軌跡として正しいものはどれか。",
+      "questionImage": "images/trajectory_001_q.svg",
+      "choices": ["1", "2", "3", "4", "5"],
+      "choiceImages": [
+        "images/trajectory_001_1.svg",
+        "images/trajectory_001_2.svg",
+        "images/trajectory_001_3.svg",
+        "images/trajectory_001_4.svg",
+        "images/trajectory_001_5.svg"
+      ],
+      "answer": 1,
+      "explanation": "線分 AP の中点 M は、固定点 A と動点 P の中点。P が半径 r の円周を一周するとき、M は A と円の中心 O の中点を中心とする半径 r/2 の円を描く。よって元の円の半分のサイズの円となる選択肢2が正解。"
+    },
+    {
+      "id": "reasoning_jdg_011",
+      "category": "judgment",
+      "question": "図のように、各面に A〜F が書かれた立方体がある（向かい合う面は A-B、C-D、E-F）。現在、上面 A、前面 C、右面 E の状態。倒す方向を「ア=手前」「イ=右」「ウ=奥」「エ=左」と定義し、倒した面が下にくるように倒す。\nア→イ→ア の順に3回倒したとき、上面に書かれているアルファベットはどれか。",
+      "questionImage": "images/cube_001_q.svg",
+      "choices": ["A", "B", "C", "D", "E"],
+      "answer": 1,
+      "explanation": "初期：上A・下B・前C・後D・右E・左F。ア（手前）後：上D・下C・前A・後B・右E・左F。イ（右）後：上F・下E・前A・後B・右D・左C。ア（手前）後：上B・下A・前F・後E・右D・左C。よって最終の上面は B。"
+    },
+    {
+      "id": "reasoning_jdg_012",
+      "category": "judgment",
+      "question": "図のように、各面に A〜F が書かれた立方体がある（向かい合う面は A-F、B-E、C-D）。現在、上面 A、前面 B、右面 C の状態。倒す方向を「ア=手前」「イ=右」「ウ=奥」「エ=左」と定義し、倒した面が下にくるように倒す。\nイ→ウ→エ の順に3回倒したとき、上面に書かれているアルファベットはどれか。",
+      "questionImage": "images/cube_002_q.svg",
+      "choices": ["A", "B", "C", "D", "E"],
+      "answer": 0,
+      "explanation": "初期：上A・下F・前B・後E・右C・左D。イ（右）後：上D・下C・前B・後E・右A・左F。ウ（奥）後：上B・下E・前C・後D・右A・左F。エ（左）後：上A・下F・前C・後D・右B・左E。よって最終の上面は A。"
+    },
+    {
+      "id": "reasoning_num_013",
+      "category": "numerical",
+      "question": "図は、ある高校（全500人）の部活動別所属人数の構成比を示している。次の記述のうち、確実にいえるものはどれか。",
+      "questionImage": "images/chart_001_q.svg",
+      "choices": [
+        "野球部の人数は140人を下回っている。",
+        "サッカー部の人数は125人を上回っている。",
+        "バスケットボール部の人数は90人ちょうどである。",
+        "バレーボール部はテニス部より人数が多い。",
+        "野球部の人数は「その他」の3倍を下回っている。"
+      ],
+      "answer": 2,
+      "explanation": "全500人に各構成比を掛けると、野球部 30%×500=150人、サッカー部 25%×500=125人、バスケットボール部 18%×500=90人、テニス部 12%×500=60人、バレーボール部 7%×500=35人、その他 8%×500=40人。選択肢3「バスケットボール部は90人ちょうど」が確実にいえる。野球部はその他の3.75倍で3倍を上回るため5は誤り。"
     }
   ]
 }

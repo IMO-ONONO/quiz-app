@@ -64,8 +64,12 @@ if (wrongQuestions.length === 0) {
     const userAnswerText = userAnswer === null
       ? '未回答'
       : `${userAnswer + 1}. ${escapeHtml(q.choices[userAnswer])}`;
+    const questionImageHtml = q.questionImage
+      ? `<img class="question-image" src="${escapeHtml(q.questionImage)}" alt="">`
+      : '';
     details.innerHTML = `
       <p>${escapeHtml(q.question)}</p>
+      ${questionImageHtml}
       <p>あなたの回答: ${userAnswerText}</p>
       <p class="correct-answer">正解: ${q.answer + 1}. ${escapeHtml(q.choices[q.answer])}</p>
       <p>${escapeHtml(q.explanation)}</p>

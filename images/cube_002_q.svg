@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" width="100%">
+  <text x="100" y="20" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#555">展開図</text>
+  <g transform="translate(50, 30)" font-family="sans-serif">
+    <rect x="50" y="0" width="50" height="50" fill="#fff3e0" stroke="#333" stroke-width="2"/>
+    <text x="75" y="34" text-anchor="middle" font-size="24" font-weight="bold">A</text>
+    <rect x="0" y="50" width="50" height="50" fill="#e3f2fd" stroke="#333" stroke-width="2"/>
+    <text x="25" y="84" text-anchor="middle" font-size="24" font-weight="bold">D</text>
+    <rect x="50" y="50" width="50" height="50" fill="#fce4ec" stroke="#333" stroke-width="2"/>
+    <text x="75" y="84" text-anchor="middle" font-size="24" font-weight="bold">B</text>
+    <rect x="100" y="50" width="50" height="50" fill="#e8f5e9" stroke="#333" stroke-width="2"/>
+    <text x="125" y="84" text-anchor="middle" font-size="24" font-weight="bold">C</text>
+    <rect x="150" y="50" width="50" height="50" fill="#f3e5f5" stroke="#333" stroke-width="2"/>
+    <text x="175" y="84" text-anchor="middle" font-size="24" font-weight="bold">E</text>
+    <rect x="50" y="100" width="50" height="50" fill="#e0f2f1" stroke="#333" stroke-width="2"/>
+    <text x="75" y="134" text-anchor="middle" font-size="24" font-weight="bold">F</text>
+  </g>
+  <text x="340" y="20" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#555">立方体の初期状態</text>
+  <g transform="translate(280, 50)" font-family="sans-serif">
+    <polygon points="0,30 60,0 120,30 60,60" fill="#fff3e0" stroke="#333" stroke-width="2"/>
+    <text x="60" y="40" text-anchor="middle" font-size="22" font-weight="bold">A</text>
+    <polygon points="0,30 60,60 60,140 0,110" fill="#fce4ec" stroke="#333" stroke-width="2"/>
+    <text x="30" y="105" text-anchor="middle" font-size="22" font-weight="bold">B</text>
+    <polygon points="60,60 120,30 120,110 60,140" fill="#e8f5e9" stroke="#333" stroke-width="2"/>
+    <text x="90" y="100" text-anchor="middle" font-size="22" font-weight="bold">C</text>
+  </g>
+  <text x="220" y="250" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#777">向かい合う面：A-F、B-E、C-D</text>
+</svg>

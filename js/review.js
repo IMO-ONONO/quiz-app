@@ -42,8 +42,12 @@ function createQuestionItem(q, meta) {
   const details = document.createElement('div');
   details.className = 'review-item-details';
   details.hidden = true;
+  const questionImageHtml = q.questionImage
+    ? `<img class="question-image" src="${escapeHtml(q.questionImage)}" alt="">`
+    : '';
   details.innerHTML = `
     <p>${escapeHtml(q.question)}</p>
+    ${questionImageHtml}
     <p class="meta">間違えた回数: ${meta.wrongCount || 1}</p>
     <p class="correct-answer">正解: ${q.answer + 1}. ${escapeHtml(q.choices[q.answer])}</p>
     <p>${escapeHtml(q.explanation)}</p>

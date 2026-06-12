@@ -77,7 +77,9 @@ async function initState() {
     id: q.id,
     category: q.category || null,
     question: q.question,
+    questionImage: q.questionImage || null,
     choices: q.choices,
+    choiceImages: q.choiceImages || null,
     answer: q.answer,
     explanation: q.explanation,
   }));
@@ -108,13 +110,36 @@ function renderQuestion() {
   const q = state.questions[state.currentIndex];
   document.getElementById('question').textContent = q.question;
 
+  const qImgEl = document.getElementById('question-image');
+  if (qImgEl) {
+    if (q.questionImage) {
+      qImgEl.src = q.questionImage;
+      qImgEl.hidden = false;
+    } else {
+      qImgEl.removeAttribute('src');
+      qImgEl.hidden = true;
+    }
+  }
+
   const choicesEl = document.getElementById('choices');
   choicesEl.innerHTML = '';
   q.choices.forEach((choice, index) => {
     const btn = document.createElement('button');
     btn.className = 'choice-button';
-    btn.textContent = `${index + 1}. ${choice}`;
     btn.type = 'button';
+
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'choice-label';
+    labelSpan.textContent = `${index + 1}. ${choice}`;
+    btn.appendChild(labelSpan);
+
+    if (q.choiceImages && q.choiceImages[index]) {
+      const img = document.createElement('img');
+      img.className = 'choice-image';
+      img.src = q.choiceImages[index];
+      img.alt = '';
+      btn.appendChild(img);
+    }
 
     if (state.userAnswers[state.currentIndex] === index) {
       btn.classList.add('selected');

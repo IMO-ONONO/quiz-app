@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-app-v12';
+const CACHE_NAME = 'quiz-app-v13';
 const ASSETS = [
   './',
   './index.html',
@@ -16,6 +16,15 @@ const ASSETS = [
   './data/japanese.json',
   './data/english.json',
   './manifest.json',
+  './images/trajectory_001_q.svg',
+  './images/trajectory_001_1.svg',
+  './images/trajectory_001_2.svg',
+  './images/trajectory_001_3.svg',
+  './images/trajectory_001_4.svg',
+  './images/trajectory_001_5.svg',
+  './images/cube_001_q.svg',
+  './images/cube_002_q.svg',
+  './images/chart_001_q.svg',
 ];
 
 self.addEventListener('install', (event) => {
