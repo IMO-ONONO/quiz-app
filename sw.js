@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-app-v17';
+const CACHE_NAME = 'quiz-app-v18';
 const ASSETS = [
   './',
   './index.html',
@@ -16,6 +16,7 @@ const ASSETS = [
   './data/japanese.json',
   './data/english.json',
   './manifest.json',
+  './icon.svg',
   './images/trajectory_001_q.svg',
   './images/trajectory_001_1.svg',
   './images/trajectory_001_2.svg',
