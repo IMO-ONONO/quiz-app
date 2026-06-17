@@ -114,6 +114,10 @@ function renderQuestion() {
   }
 
   document.getElementById('progress').textContent = `${state.currentIndex + 1}/${total}`;
+  const pbf = document.getElementById('progress-bar-fill');
+  if (pbf) {
+    pbf.style.width = `${((state.currentIndex + 1) / total) * 100}%`;
+  }
 
   const q = state.questions[state.currentIndex];
   document.getElementById('question').textContent = q.question;

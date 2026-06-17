@@ -22,7 +22,11 @@ document.getElementById('review-button').addEventListener('click', () => {
   window.location.href = 'review.html';
 });
 
-document.getElementById('test-image-button').addEventListener('click', () => {
+const testBtn = document.getElementById('test-image-button');
+if (new URLSearchParams(location.search).get('debug') === '1') {
+  testBtn.hidden = false;
+}
+testBtn.addEventListener('click', () => {
   sessionStorage.setItem('selectedSubject', 'reasoning');
   sessionStorage.setItem('testMode', 'image');
   sessionStorage.removeItem('quizState');

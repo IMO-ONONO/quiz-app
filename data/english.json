@@ -354,6 +354,64 @@
       ],
       "answer": 2,
       "explanation": "as a result of は「〜の結果として」の意で as a consequence of と同義。"
+    },
+    {
+      "id": "english_voc_007",
+      "category": "vocabulary",
+      "question": "次の英単語 \"inevitable\" の意味として最も近いのはどれか。",
+      "choices": [
+        "avoidable（避けられる）",
+        "unavoidable（避けられない）",
+        "optional（任意の）",
+        "temporary（一時的な）",
+        "unexpected（予期しない）"
+      ],
+      "answer": 1,
+      "explanation": "inevitable は「避けられない、必然の」の意。"
+    },
+    {
+      "id": "english_grm_007",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語はどれか。\nThe window was broken ___ him last night.",
+      "choices": ["of", "from", "by", "in", "for"],
+      "answer": 2,
+      "explanation": "受動態で行為者を示すときは by を用いる。"
+    },
+    {
+      "id": "english_idm_007",
+      "category": "idiom",
+      "question": "イディオム \"on cloud nine\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "very angry（とても怒っている）",
+        "extremely happy（非常に幸せ）",
+        "in trouble（困っている）",
+        "very tired（とても疲れている）",
+        "confused（混乱している）"
+      ],
+      "answer": 1,
+      "explanation": "on cloud nine は「天にも昇る心地、非常に幸せ」の意。"
+    },
+    {
+      "id": "english_syn_007",
+      "category": "synonym",
+      "question": "次のうち、\"difficult\" の同意語として最も適切なのはどれか。",
+      "choices": ["easy", "tough", "soft", "smooth", "simple"],
+      "answer": 1,
+      "explanation": "tough は「困難な、骨の折れる」の意で difficult と近い。"
+    },
+    {
+      "id": "english_phr_007",
+      "category": "phrase",
+      "question": "句 \"on behalf of\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "before（〜の前に）",
+        "in spite of（〜にもかかわらず）",
+        "representing（〜を代表して）",
+        "in addition to（〜に加えて）",
+        "regardless of（〜にかかわらず）"
+      ],
+      "answer": 2,
+      "explanation": "on behalf of は「〜を代表して、〜のために」の意。"
     }
   ]
 }
