@@ -45,6 +45,11 @@ state.questions.forEach((q, index) => {
 
 localStorage.setItem('unresolved', JSON.stringify(unresolved));
 
+const prevTotal = parseInt(localStorage.getItem('statsTotal') || '0', 10);
+const prevCorrect = parseInt(localStorage.getItem('statsCorrect') || '0', 10);
+localStorage.setItem('statsTotal', String(prevTotal + state.questions.length));
+localStorage.setItem('statsCorrect', String(prevCorrect + correctCount));
+
 const listEl = document.getElementById('wrong-list-items');
 
 if (wrongQuestions.length === 0) {
