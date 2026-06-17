@@ -412,6 +412,64 @@
       ],
       "answer": 2,
       "explanation": "on behalf of は「〜を代表して、〜のために」の意。"
+    },
+    {
+      "id": "english_voc_008",
+      "category": "vocabulary",
+      "question": "次の英単語 \"optimistic\" の意味として最も近いのはどれか。",
+      "choices": [
+        "hopeful and positive（希望に満ち前向きな）",
+        "negative（否定的な）",
+        "neutral（中立的な）",
+        "anxious（不安な）",
+        "indifferent（無関心な）"
+      ],
+      "answer": 0,
+      "explanation": "optimistic は「楽観的な、前向きな」の意。"
+    },
+    {
+      "id": "english_grm_008",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語はどれか。\nNeither John ___ Mary was at the party.",
+      "choices": ["or", "and", "nor", "but", "either"],
+      "answer": 2,
+      "explanation": "neither A nor B で「AもBも〜ない」の構文。"
+    },
+    {
+      "id": "english_idm_008",
+      "category": "idiom",
+      "question": "イディオム \"the ball is in your court\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "you are losing the game（試合に負けつつある）",
+        "it is your turn to act or decide（次に行動・決定するのはあなたの番だ）",
+        "you must play sports（スポーツをしなければならない）",
+        "you have lost something（何かを失った）",
+        "the situation is unclear（状況が不明である）"
+      ],
+      "answer": 1,
+      "explanation": "the ball is in your court は「次の判断や行動はあなた次第」の意。テニスなどに由来する比喩表現。"
+    },
+    {
+      "id": "english_syn_008",
+      "category": "synonym",
+      "question": "次のうち、\"rich\" の同意語として最も適切なのはどれか。",
+      "choices": ["poor", "wealthy", "thin", "rapid", "small"],
+      "answer": 1,
+      "explanation": "wealthy は「富裕な、裕福な」の意で rich の同意語。"
+    },
+    {
+      "id": "english_phr_008",
+      "category": "phrase",
+      "question": "句 \"provided that\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "before（〜の前に）",
+        "on condition that（〜という条件で）",
+        "since（〜以来）",
+        "although（〜だけれども）",
+        "in case of（〜の場合に）"
+      ],
+      "answer": 1,
+      "explanation": "provided that は「もし〜ならば、〜という条件で」の意で、on condition that と近い。"
     }
   ]
 }

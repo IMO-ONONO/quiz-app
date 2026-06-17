@@ -321,6 +321,46 @@
       "choices": ["100円", "108円", "112円", "120円", "135円"],
       "answer": 3,
       "explanation": "全体の比の和は 4+5=9。Aは 270 × (4/9) = 120円。"
+    },
+    {
+      "id": "reasoning_num_015a",
+      "category": "numerical",
+      "question": "初項3、公差4の等差数列について、第5項の値として正しいのはどれか。",
+      "choices": ["15", "17", "19", "21", "23"],
+      "answer": 2,
+      "explanation": "等差数列の一般項 a_n = a_1 + (n−1)d なので、a_5 = 3 + (5−1)×4 = 3 + 16 = 19。"
+    },
+    {
+      "id": "reasoning_num_015b",
+      "category": "numerical",
+      "question": "初項2、公比3の等比数列について、第4項の値として正しいのはどれか。",
+      "choices": ["18", "27", "36", "54", "81"],
+      "answer": 3,
+      "explanation": "等比数列の一般項 a_n = a_1 × r^(n−1) なので、a_4 = 2 × 3^3 = 2 × 27 = 54。"
+    },
+    {
+      "id": "reasoning_num_015c",
+      "category": "numerical",
+      "question": "底辺6cm、高さ4cmの三角形の面積として正しいのはどれか。",
+      "choices": ["10cm²", "12cm²", "18cm²", "24cm²", "30cm²"],
+      "answer": 1,
+      "explanation": "三角形の面積 = 底辺 × 高さ ÷ 2 = 6 × 4 ÷ 2 = 12cm²。"
+    },
+    {
+      "id": "reasoning_num_015d",
+      "category": "numerical",
+      "question": "1辺の長さが3cmの立方体の体積として正しいのはどれか。",
+      "choices": ["9cm³", "18cm³", "27cm³", "36cm³", "81cm³"],
+      "answer": 2,
+      "explanation": "立方体の体積 = 1辺の3乗 = 3 × 3 × 3 = 27cm³。"
+    },
+    {
+      "id": "reasoning_num_015e",
+      "category": "numerical",
+      "question": "72と108の最大公約数として正しいのはどれか。",
+      "choices": ["18", "24", "36", "48", "54"],
+      "answer": 2,
+      "explanation": "72 = 2³ × 3²、108 = 2² × 3³。共通する素因数の最小指数を取って 2² × 3² = 4 × 9 = 36。"
     }
   ]
 }
