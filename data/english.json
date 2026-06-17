@@ -470,6 +470,108 @@
       ],
       "answer": 1,
       "explanation": "provided that は「もし〜ならば、〜という条件で」の意で、on condition that と近い。"
+    },
+    {
+      "id": "english_voc_009",
+      "category": "vocabulary",
+      "question": "次の英単語 \"diligent\" の意味として最も近いのはどれか。",
+      "choices": [
+        "lazy（怠惰な）",
+        "hardworking（勤勉な）",
+        "cheerful（陽気な）",
+        "honest（正直な）",
+        "talkative（おしゃべりな）"
+      ],
+      "answer": 1,
+      "explanation": "diligent は「勤勉な、まじめに努力する」の意。"
+    },
+    {
+      "id": "english_voc_010",
+      "category": "vocabulary",
+      "question": "次の英単語 \"fragile\" の意味として最も近いのはどれか。",
+      "choices": [
+        "strong（丈夫な）",
+        "easily broken（壊れやすい）",
+        "valuable（貴重な）",
+        "heavy（重い）",
+        "transparent（透明な）"
+      ],
+      "answer": 1,
+      "explanation": "fragile は「壊れやすい、もろい」の意。"
+    },
+    {
+      "id": "english_grm_009",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語形はどれか。\nI wish I ___ speak French fluently.",
+      "choices": ["can", "could", "will", "must", "should"],
+      "answer": 1,
+      "explanation": "I wish + 過去形（または could） は実現できない願望を表す仮定法。could が適切。"
+    },
+    {
+      "id": "english_grm_010",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語はどれか。\nIf it ___ tomorrow, we will cancel the game.",
+      "choices": ["rain", "rains", "rained", "will rain", "raining"],
+      "answer": 1,
+      "explanation": "時・条件を表す副詞節（if節など）では未来のことでも現在形を用いる。三単現の s が必要で rains。"
+    },
+    {
+      "id": "english_idm_009",
+      "category": "idiom",
+      "question": "イディオム \"raining cats and dogs\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "an animal shelter is busy（動物保護施設が忙しい）",
+        "raining very heavily（土砂降りの雨が降っている）",
+        "many pets are lost（多くのペットが行方不明）",
+        "a slight drizzle（小雨が降る）",
+        "a sunny day（晴天）"
+      ],
+      "answer": 1,
+      "explanation": "raining cats and dogs は「土砂降りの雨が降る」の意。"
+    },
+    {
+      "id": "english_idm_010",
+      "category": "idiom",
+      "question": "イディオム \"don't judge a book by its cover\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "buy books with attractive covers（魅力的な表紙の本を買え）",
+        "do not judge by outward appearance（外見だけで判断するな）",
+        "read books carefully（本は丁寧に読め）",
+        "books are valuable（本は貴重である）",
+        "judge fairly（公平に判断せよ）"
+      ],
+      "answer": 1,
+      "explanation": "don't judge a book by its cover は「見かけだけで物事や人を判断するな」という意の決まり文句。"
+    },
+    {
+      "id": "english_syn_009",
+      "category": "synonym",
+      "question": "次のうち、\"small\" の同意語として最も適切なのはどれか。",
+      "choices": ["big", "tiny", "tall", "wide", "deep"],
+      "answer": 1,
+      "explanation": "tiny は「とても小さい、ごく小さな」の意で small の同意語。"
+    },
+    {
+      "id": "english_syn_010",
+      "category": "synonym",
+      "question": "次のうち、\"important\" の同意語として最も適切なのはどれか。",
+      "choices": ["trivial", "crucial", "weak", "boring", "silent"],
+      "answer": 1,
+      "explanation": "crucial は「極めて重要な、決定的な」の意で important の同意語。"
+    },
+    {
+      "id": "english_phr_009",
+      "category": "phrase",
+      "question": "句 \"according to\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "instead of（〜の代わりに）",
+        "in line with what is said by（〜によれば、〜に従って）",
+        "in spite of（〜にもかかわらず）",
+        "as well as（〜と同様に）",
+        "in case of（〜の場合に）"
+      ],
+      "answer": 1,
+      "explanation": "according to は「〜によれば、〜に従って」の意。情報源を示す際によく用いられる。"
     }
   ]
 }
