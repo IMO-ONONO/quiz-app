@@ -572,6 +572,64 @@
       ],
       "answer": 1,
       "explanation": "according to は「〜によれば、〜に従って」の意。情報源を示す際によく用いられる。"
+    },
+    {
+      "id": "english_voc_011",
+      "category": "vocabulary",
+      "question": "次の英単語 \"persistent\" の意味として最も近いのはどれか。",
+      "choices": [
+        "lazy（怠惰な）",
+        "continuing firmly（粘り強く続ける）",
+        "shy（恥ずかしがり屋の）",
+        "quick（速い）",
+        "fearful（恐れている）"
+      ],
+      "answer": 1,
+      "explanation": "persistent は「粘り強い、しつこく続ける」の意。"
+    },
+    {
+      "id": "english_grm_011",
+      "category": "grammar",
+      "question": "次の文の空所に入る最も適切な語形はどれか。\nI ___ him three times this week.",
+      "choices": ["meet", "met", "have met", "meeting", "had met"],
+      "answer": 2,
+      "explanation": "this week（今週）は現在を含む期間で、現在完了 have met が適切。"
+    },
+    {
+      "id": "english_idm_011",
+      "category": "idiom",
+      "question": "イディオム \"once in a while\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "every minute（毎分）",
+        "occasionally（時々、たまに）",
+        "always（いつも）",
+        "never（決して〜ない）",
+        "in a hurry（急いで）"
+      ],
+      "answer": 1,
+      "explanation": "once in a while は「ときどき、たまに」の意。"
+    },
+    {
+      "id": "english_syn_011",
+      "category": "synonym",
+      "question": "次のうち、\"strong\" の同意語として最も適切なのはどれか。",
+      "choices": ["weak", "powerful", "soft", "loose", "silent"],
+      "answer": 1,
+      "explanation": "powerful は「力強い、強力な」の意で strong の同意語。"
+    },
+    {
+      "id": "english_phr_010",
+      "category": "phrase",
+      "question": "前置詞 \"despite\" の意味として最も適切なのはどれか。",
+      "choices": [
+        "because of（〜のために）",
+        "in spite of（〜にもかかわらず）",
+        "thanks to（〜のおかげで）",
+        "instead of（〜の代わりに）",
+        "in addition to（〜に加えて）"
+      ],
+      "answer": 1,
+      "explanation": "despite は in spite of と同義で「〜にもかかわらず」の意。"
     }
   ]
 }
