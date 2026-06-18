@@ -786,222 +786,222 @@
       "id": "reasoning_jdg_014",
       "category": "judgment",
       "question": "A、B、Cの3人が1列に並んでいる。「AはBより前にいる」「CはAより前にいる」とき、前から順に並べると？",
-      "options": [
+      "answer": 0,
+      "explanation": "CはAより前、AはBより前 → C→A→B の順。",
+      "choices": [
         "C→A→B",
         "A→C→B",
         "B→A→C",
         "C→B→A"
-      ],
-      "answer": 0,
-      "explanation": "CはAより前、AはBより前 → C→A→B の順。"
+      ]
     },
     {
       "id": "reasoning_jdg_015",
       "category": "judgment",
       "question": "「全ての猫は動物である」「一部の動物はペットである」から確実に言えることは？",
-      "options": [
+      "answer": 3,
+      "explanation": "前提から「猫→動物」「一部の動物→ペット」は導けるが、その動物が猫かどうかは不明。確実に言えることはない。",
+      "choices": [
         "一部の猫はペットである",
         "全ての猫はペットである",
         "一部のペットは猫である",
         "確実に言えることはない"
-      ],
-      "answer": 3,
-      "explanation": "前提から「猫→動物」「一部の動物→ペット」は導けるが、その動物が猫かどうかは不明。確実に言えることはない。"
+      ]
     },
     {
       "id": "reasoning_jdg_016",
       "category": "judgment",
       "question": "「PならばQ」が真のとき、必ず真と言える命題はどれか？",
-      "options": [
+      "answer": 2,
+      "explanation": "「PならばQ」の対偶「QでないならばPでない」は必ず真。逆・裏は真とは限らない。",
+      "choices": [
         "QならばP",
         "PでないならばQでない",
         "QでないならばPでない",
         "PでないならばQ"
-      ],
-      "answer": 2,
-      "explanation": "「PならばQ」の対偶「QでないならばPでない」は必ず真。逆・裏は真とは限らない。"
+      ]
     },
     {
       "id": "reasoning_jdg_017",
       "category": "judgment",
       "question": "A～Eの5人で徒競走をした。「AはCより速い」「BはDより速い」「CはEより速い」「DはAより速い」とき、最も遅いのは誰か？",
-      "options": [
+      "answer": 2,
+      "explanation": "B>D>A>C>E の順が成立。最も遅いのはE。",
+      "choices": [
         "C",
         "D",
         "E",
         "B"
-      ],
-      "answer": 2,
-      "explanation": "B>D>A>C>E の順が成立。最も遅いのはE。"
+      ]
     },
     {
       "id": "reasoning_jdg_018",
       "category": "judgment",
       "question": "A、B、Cの3人のうち1人だけが嘘をつく。A「Bは嘘つきだ」B「Cは正直者だ」C「Aは嘘つきだ」。嘘をついているのは誰か？",
-      "options": [
+      "answer": 1,
+      "explanation": "Bが嘘つきと仮定：A「Bは嘘つき」→真、C「Aは嘘つき」→偽、B「Cは正直者」→偽(Bが嘘つき)。AとCが真・偽で矛盾しないのはBが嘘つきの場合のみ。",
+      "choices": [
         "A",
         "B",
         "C",
         "判断できない"
-      ],
-      "answer": 1,
-      "explanation": "Bが嘘つきと仮定：A「Bは嘘つき」→真、C「Aは嘘つき」→偽、B「Cは正直者」→偽(Bが嘘つき)。AとCが真・偽で矛盾しないのはBが嘘つきの場合のみ。"
+      ]
     },
     {
       "id": "reasoning_jdg_019",
       "category": "judgment",
       "question": "赤・青・黄・緑の4色の箱が左から並んでいる。「赤は青の隣」「黄は端でない」「緑は一番左」の条件を満たす配列はどれか？",
-      "options": [
+      "answer": 1,
+      "explanation": "緑が一番左→左端は緑。黄が端でない→2番目か3番目。赤と青が隣接。緑・黄・赤・青なら全条件を満たす。",
+      "choices": [
         "緑・赤・青・黄",
         "緑・黄・赤・青",
         "緑・赤・黄・青",
         "緑・青・赤・黄"
-      ],
-      "answer": 1,
-      "explanation": "緑が一番左→左端は緑。黄が端でない→2番目か3番目。赤と青が隣接。緑・黄・赤・青なら全条件を満たす。"
+      ]
     },
     {
       "id": "reasoning_jdg_020",
       "category": "judgment",
       "question": "「スポーツが好きな人は健康である」「健康でない人はストレスが多い」が真のとき、確実に言えることは？",
-      "options": [
+      "answer": 1,
+      "explanation": "対偶より「健康→スポーツ好き」の逆は言えない。「ストレスが多い→健康でない」の対偶「健康→ストレス少ない」と組み合わせて「スポーツ好き→健康→ストレス少ない」。対偶「ストレスが多い→健康でない→スポーツ嫌い」が成立。",
+      "choices": [
         "スポーツが好きな人はストレスが少ない",
         "ストレスが多い人はスポーツが嫌いだ",
         "健康な人はスポーツが好きだ",
         "ストレスが少ない人は健康だ"
-      ],
-      "answer": 1,
-      "explanation": "対偶より「健康→スポーツ好き」の逆は言えない。「ストレスが多い→健康でない」の対偶「健康→ストレス少ない」と組み合わせて「スポーツ好き→健康→ストレス少ない」。対偶「ストレスが多い→健康でない→スポーツ嫌い」が成立。"
+      ]
     },
     {
       "id": "reasoning_jdg_021",
       "category": "judgment",
       "question": "東西南北の4方向に各1軒ずつ家がある。A宅は中心からみて北、B宅の東にC宅がある。D宅はC宅の南にある。B宅はどの方向にあるか？",
-      "options": [
+      "answer": 3,
+      "explanation": "A=北。C=BのAの東側。D=Cの南。南北東西に1軒ずつなので、A=北、C=東、D=南、B=西。",
+      "choices": [
         "北",
         "南",
         "東",
         "西"
-      ],
-      "answer": 3,
-      "explanation": "A=北。C=BのAの東側。D=Cの南。南北東西に1軒ずつなので、A=北、C=東、D=南、B=西。"
+      ]
     },
     {
       "id": "reasoning_jdg_022",
       "category": "judgment",
       "question": "月～金の5日間に会議がある。「月曜と水曜は連続しない」「火曜は必ずある」「木曜があれば金曜もある」。月・火・木がある場合、金曜はあるか？",
-      "options": [
+      "answer": 0,
+      "explanation": "木曜があれば金曜もある、という条件より、木曜がある場合は金曜が必ずある。",
+      "choices": [
         "必ずある",
         "必ずない",
         "あってもなくてもよい",
         "条件が矛盾する"
-      ],
-      "answer": 0,
-      "explanation": "木曜があれば金曜もある、という条件より、木曜がある場合は金曜が必ずある。"
+      ]
     },
     {
       "id": "reasoning_jdg_023",
       "category": "judgment",
       "question": "A～Dの4人がテストを受けた。「AはBより高い」「CはDより高い」「BはCより高い」。最も低い点数は誰か？",
-      "options": [
+      "answer": 2,
+      "explanation": "A>B>C>D の順。最も低いのはD。",
+      "choices": [
         "B",
         "C",
         "D",
         "A"
-      ],
-      "answer": 2,
-      "explanation": "A>B>C>D の順。最も低いのはD。"
+      ]
     },
     {
       "id": "reasoning_jdg_024",
       "category": "judgment",
       "question": "正六面体（サイコロ）で「1の面の対面は6」「2の面の対面は5」のとき、3の対面はどれか？",
-      "options": [
+      "answer": 0,
+      "explanation": "サイコロの対面の和は常に7。1-6、2-5、3-4。よって3の対面は4。",
+      "choices": [
         "4",
         "5",
         "6",
         "2"
-      ],
-      "answer": 0,
-      "explanation": "サイコロの対面の和は常に7。1-6、2-5、3-4。よって3の対面は4。"
+      ]
     },
     {
       "id": "reasoning_jdg_025",
       "category": "judgment",
       "question": "「勉強した人は試験に合格する」「試験に合格した人は就職できる」。この2つが真のとき、確実に言えることは？",
-      "options": [
+      "answer": 1,
+      "explanation": "三段論法：勉強した→合格→就職できる。よって「勉強した人は就職できる」が成立。逆（就職できた→勉強した）は言えない。",
+      "choices": [
         "就職できた人は勉強した",
         "勉強した人は就職できる",
         "就職できない人は勉強していない",
         "勉強しなかった人は就職できない"
-      ],
-      "answer": 1,
-      "explanation": "三段論法：勉強した→合格→就職できる。よって「勉強した人は就職できる」が成立。逆（就職できた→勉強した）は言えない。"
+      ]
     },
     {
       "id": "reasoning_jdg_026",
       "category": "judgment",
       "question": "A、B、C、D、Eが円形テーブルに座っている。「AとCは隣り合わない」「BはAの右隣」「DはCの左隣」。AとBが隣り合うとき、Aの左隣は誰か？",
-      "options": [
+      "answer": 2,
+      "explanation": "B=Aの右隣。5人の円形配置でAとCは隣り合わない。DはCの左隣。条件を満たすとき、Aの左隣はEとなる。",
+      "choices": [
         "C",
         "D",
         "E",
         "B"
-      ],
-      "answer": 2,
-      "explanation": "B=Aの右隣。5人の円形配置でAとCは隣り合わない。DはCの左隣。条件を満たすとき、Aの左隣はEとなる。"
+      ]
     },
     {
       "id": "reasoning_jdg_027",
       "category": "judgment",
       "question": "「すべてのAはBである」「すべてのBはCでない」が真のとき、確実に言えることは？",
-      "options": [
+      "answer": 0,
+      "explanation": "A→B、B→Cでない。三段論法よりA→Cでない。「すべてのAはCでない」が確実。",
+      "choices": [
         "すべてのAはCでない",
         "すべてのCはAでない",
         "一部のCはAである",
         "CはBである"
-      ],
-      "answer": 0,
-      "explanation": "A→B、B→Cでない。三段論法よりA→Cでない。「すべてのAはCでない」が確実。"
+      ]
     },
     {
       "id": "reasoning_jdg_028",
       "category": "judgment",
       "question": "5人が1列に並ぶ。「AとBの間に2人いる」「BとCは隣り合う」「Dは端にいない」。Aが一番端のとき、Dは何番目か？",
-      "options": [
+      "answer": 1,
+      "explanation": "A=1番目のとき、AとBの間に2人→Bは4番目。BとCは隣り合う→C=3番目か5番目。Dは端でない→D=2,3,4番目。条件を整理するとDは3番目が確定する。",
+      "choices": [
         "2番目",
         "3番目",
         "4番目",
         "5番目"
-      ],
-      "answer": 1,
-      "explanation": "A=1番目のとき、AとBの間に2人→Bは4番目。BとCは隣り合う→C=3番目か5番目。Dは端でない→D=2,3,4番目。条件を整理するとDは3番目が確定する。"
+      ]
     },
     {
       "id": "reasoning_jdg_029",
       "category": "judgment",
       "question": "「PかつQ」が偽のとき、確実に言えることは？",
-      "options": [
+      "answer": 1,
+      "explanation": "「PかつQ」が偽 ↔ 「PでないまたはQでない」（ド・モルガンの法則）。つまりP、Qの少なくとも一方が偽。",
+      "choices": [
         "PもQも偽",
         "Pが偽またはQが偽（あるいは両方）",
         "PもQも真",
         "Pが真ならQも真"
-      ],
-      "answer": 1,
-      "explanation": "「PかつQ」が偽 ↔ 「PでないまたはQでない」（ド・モルガンの法則）。つまりP、Qの少なくとも一方が偽。"
+      ]
     },
     {
       "id": "reasoning_jdg_030",
       "category": "judgment",
       "question": "A～Eの5人のうち2人が嘘つきで、3人が正直者。A「BとCは正直者」B「AとDは嘘つき」C「Bは嘘つき」。Aが嘘つきのとき、嘘つきはAともう一人誰か？",
-      "options": [
+      "answer": 0,
+      "explanation": "Aが嘘つき→A「BとCは正直者」が偽→BかCの少なくとも一方が嘘つき。B「AとDは嘘つき」が真（正直者）なら、Dも嘘つきになり嘘つきが3人になる矛盾。よってBが嘘つき。C「Bは嘘つき」→真→Cは正直者。嘘つきはAとB。",
+      "choices": [
         "B",
         "C",
         "D",
         "E"
-      ],
-      "answer": 0,
-      "explanation": "Aが嘘つき→A「BとCは正直者」が偽→BかCの少なくとも一方が嘘つき。B「AとDは嘘つき」が真（正直者）なら、Dも嘘つきになり嘘つきが3人になる矛盾。よってBが嘘つき。C「Bは嘘つき」→真→Cは正直者。嘘つきはAとB。"
+      ]
     }
   ]
 }
