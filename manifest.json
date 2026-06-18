@@ -1,6 +1,6 @@
 {
-  "name": "公務員試験対策",
-  "short_name": "公務員対策",
+  "name": "QuizApp",
+  "short_name": "Quiz",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f5f5f5",
