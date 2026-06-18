@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-app-v26';
+const CACHE_NAME = 'quiz-app-v27';
 const ASSETS = [
   './',
   './index.html',
@@ -26,6 +26,11 @@ const ASSETS = [
   './images/cube_001_q.svg',
   './images/cube_002_q.svg',
   './images/chart_001_q.svg',
+  './images/cube_003_q.svg',
+  './images/cube_004_q.svg',
+  './images/chart_002_q.svg',
+  './images/chart_003_q.svg',
+  './stats.html',
 ];
 
 self.addEventListener('install', (event) => {

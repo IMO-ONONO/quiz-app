@@ -50,6 +50,12 @@ const prevCorrect = parseInt(localStorage.getItem('statsCorrect') || '0', 10);
 localStorage.setItem('statsTotal', String(prevTotal + state.questions.length));
 localStorage.setItem('statsCorrect', String(prevCorrect + correctCount));
 
+const subKey = state.subject;
+const prevSubTotal   = parseInt(localStorage.getItem('statsTotal_'   + subKey) || '0', 10);
+const prevSubCorrect = parseInt(localStorage.getItem('statsCorrect_' + subKey) || '0', 10);
+localStorage.setItem('statsTotal_'   + subKey, String(prevSubTotal   + state.questions.length));
+localStorage.setItem('statsCorrect_' + subKey, String(prevSubCorrect + correctCount));
+
 const listEl = document.getElementById('wrong-list-items');
 
 if (wrongQuestions.length === 0) {

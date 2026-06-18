@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成績確認 - 公務員試験対策</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1976d2">
+  <style>
+    .stats-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .stats-card h2 {
+      font-size: 1rem;
+      color: #1976d2;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid #e3f2fd;
+      padding-bottom: 0.4rem;
+    }
+    .stats-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.95rem;
+    }
+    .stats-row:last-child {
+      border-bottom: none;
+    }
+    .stats-label {
+      color: #555;
+    }
+    .stats-value {
+      font-weight: bold;
+      color: #333;
+    }
+    .stats-rate {
+      color: #1976d2;
+      font-size: 1rem;
+      font-weight: bold;
+      min-width: 3.5rem;
+      text-align: right;
+    }
+    .no-data {
+      color: #999;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    .overall-score {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      color: #1976d2;
+      padding: 0.5rem 0 0.25rem;
+    }
+    .overall-rate {
+      font-size: 1rem;
+      text-align: center;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    .reset-button {
+      width: 100%;
+      min-height: 44px;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #d32f2f;
+      font-family: inherit;
+    }
+    .reset-button:active {
+      background: #ffebee;
+    }
+  </style>
+</head>
+<body>
+  <main class="screen">
+    <h1>成績確認</h1>
+
+    <div class="stats-card" id="overall-card">
+      <h2>通算成績</h2>
+      <div id="overall-content"></div>
+    </div>
+
+    <div class="stats-card">
+      <h2>科目別成績</h2>
+      <div id="subject-content"></div>
+    </div>
+
+    <div class="menu" style="margin-top:1rem">
+      <button class="menu-button" onclick="window.location.href='index.html'" type="button">
+        <span class="menu-label">トップへ戻る</span>
+      </button>
+      <button class="reset-button" id="reset-button" type="button">成績データをリセット</button>
+    </div>
+  </main>
+
+  <script>
+    const SUBJECTS = [
+      { key: 'reasoning', label: '数的・判断推理' },
+      { key: 'memory',    label: '暗記' },
+      { key: 'japanese',  label: '日本語' },
+      { key: 'english',   label: '英語' },
+    ];
+
+    function pct(correct, total) {
+      if (total === 0) return null;
+      return Math.round(correct / total * 100);
+    }
+
+    function renderOverall() {
+      const total   = parseInt(localStorage.getItem('statsTotal')   || '0', 10);
+      const correct = parseInt(localStorage.getItem('statsCorrect') || '0', 10);
+      const el = document.getElementById('overall-content');
+      if (total === 0) {
+        el.innerHTML = '<p class="no-data">まだ記録がありません。</p>';
+        return;
+      }
+      const rate = pct(correct, total);
+      el.innerHTML = `
+        <div class="overall-score">${correct} / ${total} 問正解</div>
+        <div class="overall-rate">正答率 ${rate}%</div>
+      `;
+    }
+
+    function renderSubjects() {
+      const el = document.getElementById('subject-content');
+      let html = '';
+      SUBJECTS.forEach(({ key, label }) => {
+        const total   = parseInt(localStorage.getItem('statsTotal_'   + key) || '0', 10);
+        const correct = parseInt(localStorage.getItem('statsCorrect_' + key) || '0', 10);
+        const rate = pct(correct, total);
+        html += `<div class="stats-row">
+          <span class="stats-label">${label}</span>
+          <span class="stats-value">${total === 0 ? '―' : correct + ' / ' + total}</span>
+          <span class="stats-rate">${rate === null ? '―' : rate + '%'}</span>
+        </div>`;
+      });
+      el.innerHTML = html;
+    }
+
+    document.getElementById('reset-button').addEventListener('click', () => {
+      if (!confirm('成績データをすべて削除しますか？')) return;
+      localStorage.removeItem('statsTotal');
+      localStorage.removeItem('statsCorrect');
+      SUBJECTS.forEach(({ key }) => {
+        localStorage.removeItem('statsTotal_' + key);
+        localStorage.removeItem('statsCorrect_' + key);
+      });
+      renderOverall();
+      renderSubjects();
+    });
+
+    renderOverall();
+    renderSubjects();
+  </script>
+</body>
+</html>
