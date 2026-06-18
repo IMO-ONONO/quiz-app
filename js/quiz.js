@@ -234,7 +234,11 @@ document.getElementById('next-button').addEventListener('click', () => {
 });
 
 (async function init() {
-  if (!state || state.subject !== subject) {
+  const stale =
+    !state ||
+    state.subject !== subject ||
+    state.questions.some((q) => !q.choices);
+  if (stale) {
     await initState();
   }
   renderQuestion();
