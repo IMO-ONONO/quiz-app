@@ -100,6 +100,7 @@
       <button class="menu-button" onclick="window.location.href='index.html'" type="button">
         <span class="menu-label">トップへ戻る</span>
       </button>
+      <button class="reset-button" id="reset-unresolved-button" type="button">見直しプールをリセット</button>
       <button class="reset-button" id="reset-button" type="button">成績データをリセット</button>
     </div>
   </main>
@@ -158,6 +159,12 @@
       });
       renderOverall();
       renderSubjects();
+    });
+
+    document.getElementById('reset-unresolved-button').addEventListener('click', () => {
+      if (!confirm('「間違えた問題を見直す」のプールをすべて空にしますか？')) return;
+      localStorage.removeItem('unresolved');
+      alert('見直しプールを空にしました。');
     });
 
     renderOverall();
