@@ -1,6 +1,6 @@
 {
-  "name": "QuizApp",
-  "short_name": "Quiz",
+  "name": "マイクイズ",
+  "short_name": "マイクイズ",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f5f5f5",

@@ -45,15 +45,7 @@ function saveState() {
 async function initState() {
   const response = await fetch(`data/${subject}.json`);
   const data = await response.json();
-  let allQuestions = data.questions || [];
-
-  if (sessionStorage.getItem('testMode') === 'image') {
-    allQuestions = allQuestions.filter(
-      (q) =>
-        q.questionImage ||
-        (Array.isArray(q.choiceImages) && q.choiceImages.some((p) => p))
-    );
-  }
+  const allQuestions = data.questions || [];
 
   const unresolved = JSON.parse(localStorage.getItem('unresolved') || '{}');
   const unresolvedIds = Object.keys(unresolved).filter((id) =>
@@ -71,13 +63,9 @@ async function initState() {
   const remaining = 10 - unresolvedQuestions.length;
   const otherQuestions = allQuestions.filter((q) => !unresolvedIds.includes(q.id));
 
-  let additional;
-  const distributedSubjects = ['memory', 'japanese', 'english'];
-  if (distributedSubjects.includes(subject) && remaining > 0) {
-    additional = pickDistributedByCategory(otherQuestions, remaining);
-  } else {
-    additional = shuffle(otherQuestions).slice(0, Math.max(0, remaining));
-  }
+  const additional = remaining > 0
+    ? pickDistributedByCategory(otherQuestions, remaining)
+    : [];
 
   const combined = shuffle([...unresolvedQuestions, ...additional]);
 

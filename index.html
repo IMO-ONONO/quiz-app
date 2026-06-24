@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>公務員試験対策</title>
+  <title>マイクイズ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1976d2">
 </head>
 <body>
   <main class="screen">
-    <h1>公務員試験対策</h1>
-    <p class="subtitle">項目を選んで10問解こう</p>
+    <h1>マイクイズ</h1>
+    <p class="subtitle">分野を選んで10問解こう</p>
     <p class="stats" id="stats" hidden></p>
 
     <div class="menu">
-      <button class="menu-button" data-subject="reasoning" type="button">
-        <span class="menu-label">数的・判断推理</span>
+      <button class="menu-button" data-subject="animals" type="button">
+        <span class="menu-label">動物の生態</span>
       </button>
-      <button class="menu-button" data-subject="memory" type="button">
-        <span class="menu-label">暗記</span>
+      <button class="menu-button" data-subject="paleontology" type="button">
+        <span class="menu-label">古生物</span>
       </button>
-      <button class="menu-button" data-subject="japanese" type="button">
-        <span class="menu-label">日本語</span>
+      <button class="menu-button" data-subject="cs" type="button">
+        <span class="menu-label">コンピュータサイエンス</span>
       </button>
-      <button class="menu-button" data-subject="english" type="button">
-        <span class="menu-label">英語</span>
+      <button class="menu-button" data-subject="art" type="button">
+        <span class="menu-label">美術</span>
       </button>
       <button class="menu-button review-button" id="review-button" type="button">
         <span class="menu-label">間違えた問題を見直す</span>
@@ -33,9 +33,6 @@
       </button>
       <button class="menu-button" id="stats-button" type="button" onclick="window.location.href='stats.html'">
         <span class="menu-label">成績確認</span>
-      </button>
-      <button class="menu-button test-button" id="test-image-button" type="button" hidden>
-        <span class="menu-label">画像問題テスト（動作確認用）</span>
       </button>
     </div>
   </main>
