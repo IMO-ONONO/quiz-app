@@ -1,4 +1,15 @@
+const VALID_ID_PREFIXES = ['animals_', 'paleo_', 'cs_', 'art_'];
 const unresolved = JSON.parse(localStorage.getItem('unresolved') || '{}');
+let unresolvedChanged = false;
+Object.keys(unresolved).forEach((id) => {
+  if (!VALID_ID_PREFIXES.some((p) => id.startsWith(p))) {
+    delete unresolved[id];
+    unresolvedChanged = true;
+  }
+});
+if (unresolvedChanged) {
+  localStorage.setItem('unresolved', JSON.stringify(unresolved));
+}
 const totalUnresolved = Object.keys(unresolved).length;
 
 const statsTotal = parseInt(localStorage.getItem('statsTotal') || '0', 10);
